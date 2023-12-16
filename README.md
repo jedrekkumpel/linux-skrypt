@@ -76,6 +76,7 @@ NC='\033[0m'
 echo -e "${RED}"
 ```
 Definiuje zmienne RED i NC, które zawierają kody kolorów w formacie ANSI. Następnie wyświetla kolor czerwony za pomocą zmiennej RED.
+Te 3 linie kodu nie są potrzebne, dodałem je tylko ze względów estetycznych, oraz by po wywołaniu skryptu wyróżniał się od reszty tekstu.
 ```python
 remove_last_line() {
     file="$1"
@@ -106,7 +107,9 @@ while true; do
     echo -e             "4. wyjdź."
     read -p "Wybierz opcję: " option
 ```
-Rozpoczyna nieskończoną pętlę, wyświetla menu opcji, prosi użytkownika o wybór opcji i oczekuje na wprowadzenie opcji przez użytkownika.
+Rozpoczyna nieskończoną pętlę, wyświetla menu proste menu tekstowe, prosi użytkownika o wybór opcji i oczekuje na wprowadzenie opcji przez użytkownika.
+na początku może być niezrozumiałe to, dlaczego echo jest dodane z opcją "-e". Jak wiemy opcja "-e" interpretuje znaki specjalne, więc menu tekstowe 
+które jest odpowiednio wycentrowane za pomocą tabulatora bądź spacji, będzie wyglądać lepiej i przejrzściej niż menu które by było wypisane od lewej strony.
 ```python
     case $option in
         1)
