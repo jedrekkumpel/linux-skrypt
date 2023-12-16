@@ -2,6 +2,15 @@
 skrypt z linuxa na lekcje ASO
 oto skrypt:
 
+
+
+
+
+
+
+
+
+
 #!/bin/bash
 
 RED='\033[0;31m'
