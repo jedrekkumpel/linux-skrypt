@@ -1,5 +1,5 @@
-# linux-skrypt
-skrypt z linuxa na lekcje ASO
+# 🐧 Linux Skrypt 🐧
+🐧 skrypt z linuxa na lekcje ASO, wykonany przez Gabriela Jędrzejczyka 🐧
 
 Oto kod skryptu:
 
