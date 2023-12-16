@@ -1,6 +1,7 @@
 # linux-skrypt
 skrypt z linuxa na lekcje ASO
-oto skrypt:
+
+Oto kod skryptu:
 
 ```python
 #!/bin/bash
@@ -54,7 +55,7 @@ while true; do
             break
             ;;
         3)
-            echo "autorem jest bot"
+            echo "autorem jest Gabriel Jędrzejczyk 2TiM"
             ;;
         *)
             echo "Nieprawidłowa opcja"
