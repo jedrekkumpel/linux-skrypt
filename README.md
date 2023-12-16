@@ -63,3 +63,26 @@ while true; do
     esac
 done
 ```
+
+Poniżej postaram się wyjaśnić jak działają mniej zrozumiałe linie kodu:
+
+
+RED='\033[0;31m' i NC='\033[0m': Te linijki definiują zmienne, które zawierają kody kolorów. RED zawiera kod koloru czerwonego, a NC resetuje kolor do domyślnego.
+
+echo -e "${RED}": Ta linijka wyświetla czerwony kolor tekstu w terminalu.
+
+remove_last_line() { ... }: Ta linijka definiuje funkcję o nazwie remove_last_line, która usuwa ostatnią linię z pliku tekstowego i wyświetla resztę pliku.
+
+search_files() { ... }: Ta linijka definiuje funkcję o nazwie search_files, która wyszukuje pliki tekstowe zawierające określone słowo kluczowe w określonym folderze i wywołuje funkcję remove_last_line dla każdego znalezionego pliku.
+
+while true; do ... done: Ta linijka rozpoczyna pętlę nieskończoną, która wyświetla menu i wykonuje odpowiednie akcje w zależności od wyboru użytkownika.
+
+case $option in ... esac: Ta linijka rozpoczyna blok instrukcji warunkowych case, który sprawdza wartość zmiennej option i wykonuje odpowiednią sekcję kodu w zależności od wyboru użytkownika.
+
+read -p "Wybierz opcję: " option: Ta linijka prosi użytkownika o wybór opcji i zapisuje wybór do zmiennej option.
+
+read -p "Podaj ścieżkę do folderu: " folder i read -p "Podaj słowo kluczowe: " keyword: Te linijki proszą użytkownika o podanie ścieżki do folderu i słowa kluczowego, które będą używane w funkcji search_files.
+
+pids=$(ps aux | awk '{print $2}' | shuf -n 5): Ta linijka pobiera identyfikatory procesów (PID) dla wszystkich procesów i losowo wybiera 5 z nich.
+
+for pid in $pids; do ... done: Ta linijka iteruje przez wybrane identyfikatory procesów i wykonuje akcję dla każdego z nich.
