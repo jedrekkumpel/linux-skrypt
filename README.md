@@ -30,17 +30,17 @@ search_files() {
 
 
 while true; do
-    printf "%*s\n" $(((${#title}+20)/2)) "====Menu===="
-    printf "%*s\n" $(((${#title}+20)/2)) "1. Wyszukaj pliki tekstowe w określonym folderze i usuń ostatnią linię."
-    printf "%*s\n" $(((${#title}+20)/2)) "2. Zabij 5 losowych procesów działających w tle, i je wyświetl."
-    printf "%*s\n" $(((${#title}+20)/2)) "3. Wyświetl autora skryptu."
-    printf "%*s\n" $(((${#title}+20)/2)) "4. wyjdź."
+    echo -e                                             "====Menu===="
+    echo -e             "1. Wyszukaj pliki tekstowe w określonym folderze i usuń ostatnią linię."
+    echo -e             "2. Zabij 5 losowych procesów działających w tle, i je wyświetl."
+    echo -e             "3. Wyświetl autora skryptu."
+    echo -e             "4. wyjdź."
     read -p "Wybierz opcję: " option
 
     case $option in
         1)
             read -p "Podaj ścieżkę do folderu: " folder
-            read -p "Podaj słowo kluczowe: " keyword
+           read -p "Podaj słowo kluczowe: " keyword
             search_files "$folder" "$keyword"
             ;;
         2)
@@ -55,7 +55,7 @@ while true; do
             break
             ;;
         3)
-            echo "autorem jest Gabriel Jędrzejczyk 2TiM"
+            echo "autorem jest bot"
             ;;
         *)
             echo "Nieprawidłowa opcja"
