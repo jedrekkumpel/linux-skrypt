@@ -34,16 +34,17 @@ while true; do
     echo -e             "1. Wyszukaj pliki tekstowe w określonym folderze i usuń ostatnią linię."
     echo -e             "2. Zabij 5 losowych procesów działających w tle, i je wyświetl."
     echo -e             "3. Wyświetl autora skryptu."
-    echo -e             "4. wyjdź."
+    echo -e             "4. Wyświetl klase autora."
+    echo -e             "5. Wyjdź.
     read -p "Wybierz opcję: " option
 
-    case $option in
-        1)
+      case $option in
+         1)
             read -p "Podaj ścieżkę do folderu: " folder
-           read -p "Podaj słowo kluczowe: " keyword
+            read -p "Podaj słowo kluczowe: " keyword
             search_files "$folder" "$keyword"
             ;;
-        2)
+         2)
             pids=$(ps aux | awk '{print $2}' | shuf -n 5)
             for pid in $pids; do
                 kill "$pid"
@@ -51,12 +52,16 @@ while true; do
             echo "Zabito 5 losowych procesów, oto zabite procesy: "
             ps aux | shuf -n 5
             ;;
-        4)
+         3)
+            echo "autorem jest Gabriel Jędrzejczyk 2TiM"
+            ;;
+         4)
+            echo "klasa autora: 2TIM"
+            ;;
+         5)
             break
             ;;
-        3)
-            echo "autorem jest bot"
-            ;;
+       
         *)
             echo "Nieprawidłowa opcja"
             ;;
@@ -87,7 +92,9 @@ remove_last_line() {
     cat  /home/student/Dokumenty/plik1.txt
 }
 ```
-Definiuje funkcję remove_last_line, która usuwa ostatnią linię z określonego pliku, wyświetla komunikat o usunięciu linii oraz wyświetla pozostałą zawartość pliku tekstowego.
+Definiuje funkcję remove_last_line, która usuwa ostatnią linię z określonego pliku, wyświetla komunikat o usunięciu linii oraz wyświetla pozostałą zawartość pliku tekstowego. 
+Jeśli jest więcej niż jeden plik, a nie zdefiniujemy konkretnego pliku tekstowego, to usunie ostatnią linię z każdego pliku znajdującego się w tym folderze oraz wypisze pozostałe
+zawartości wszystkich plików.
 ```python
 search_files() {
     folder="$1"
@@ -105,7 +112,8 @@ while true; do
     echo -e             "1. Wyszukaj pliki tekstowe w określonym folderze i usuń ostatnią linię."
     echo -e             "2. Zabij 5 losowych procesów działających w tle, i je wyświetl."
     echo -e             "3. Wyświetl autora skryptu."
-    echo -e             "4. wyjdź."
+    echo -e             "4. Wyświetl klase autora."
+    echo -e             "5. Wyjdź.
     read -p "Wybierz opcję: " option
 ```
 Rozpoczyna nieskończoną pętlę, wyświetla menu proste menu tekstowe, prosi użytkownika o wybór opcji i oczekuje na wprowadzenie opcji przez użytkownika.
@@ -113,12 +121,12 @@ na początku może być niezrozumiałe to, dlaczego echo jest dodane z opcją "-
 które jest odpowiednio wycentrowane za pomocą tabulatora bądź spacji, będzie wyglądać lepiej i przejrzściej niż menu które by było wypisane od lewej strony.
 ```python
     case $option in
-        1)
+         1)
             read -p "Podaj ścieżkę do folderu: " folder
             read -p "Podaj słowo kluczowe: " keyword
             search_files "$folder" "$keyword"
             ;;
-        2)
+         2)
             pids=$(ps aux | awk '{print $2}' | shuf -n 5)
             for pid in $pids; do
                 kill "$pid"
@@ -126,12 +134,16 @@ które jest odpowiednio wycentrowane za pomocą tabulatora bądź spacji, będzi
             echo "Zabito 5 losowych procesów, oto zabite procesy: "
             ps aux | shuf -n 5
             ;;
-        4)
-            break
-            ;;
-        3)
+         3)
             echo "autorem jest Gabriel Jędrzejczyk 2TiM"
             ;;
+         4)
+            echo "klasa autora: 2TIM"
+            ;;
+         5)
+            break
+            ;;
+       
         *)
             echo "Nieprawidłowa opcja"
             ;;
