@@ -2,15 +2,7 @@
 skrypt z linuxa na lekcje ASO
 oto skrypt:
 
-
-
-
-
-
-
-
-
-
+```python
 #!/bin/bash
 
 RED='\033[0;31m'
@@ -69,3 +61,4 @@ while true; do
             ;;
     esac
 done
+```
