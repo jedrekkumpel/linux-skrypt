@@ -7,7 +7,7 @@
   <h3 align="center">Skrypt Linux posiadający proste menu tekstowe</h3>
  
   <p align="center">
-    Multitool 
+    Multitool by Gabriel Jędrzejczyk aka jedrekkumpel 😎
     <br/>
     <br/>
   </p>
