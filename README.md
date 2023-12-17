@@ -156,5 +156,14 @@ W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwa
 
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186005358645358662/image.png?ex=6591ac90&is=657f3790&hm=330a03b62811787ef9fc722df22beb2e118bc122fef6ef60d20c8f7aaac9c2a3&)
 
+Po wypisaniu "./skrypy.sh" wyświetla nam się menu tekstowe, z możliwością wyboru liczby od 1 do 5. 
 
+1. Wyszukuje pliki tekstowe w określonym folderze i usuwa ostatnią linię.
+2. Zabija 5 losowych procesów działających w tle, i je wyświetla.
+3. Wyświetla autora skryptu.
+4. Wyświetla klase autora.
+5. Wychodzi.
+
+Po wypisaniu nieprawidłowej liczby, czyli większej niż 5 bądź mniejszej niż 0, wyświetla się komunikat "Nieprawidłowa opcja", a menu tekstowe wyświetla się raz jeszcze znów prosząc nas o wybranie opcji. Na dole jest przykład: 
+![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186015662640992287/image.png?ex=6591b629&is=657f4129&hm=66bf562f8a406adb6ba9cf8b8326a86727e6d7e7441f6afb6593c08fe8c738ec&)
 
