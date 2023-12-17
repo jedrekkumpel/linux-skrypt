@@ -35,7 +35,7 @@ while true; do
     echo -e             "2. Zabij 5 losowych procesów działających w tle, i je wyświetl."
     echo -e             "3. Wyświetl autora skryptu."
     echo -e             "4. Wyświetl klase autora."
-    echo -e             "5. Wyjdź.
+    echo -e             "5. Wyjdź."
     read -p "Wybierz opcję: " option
 
       case $option in
