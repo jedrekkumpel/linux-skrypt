@@ -106,7 +106,7 @@ done
 ```
 Skrypt rozpoczyna się od deklaracji powłoki, w tym przypadku jest to powłoka Bash.
 
-## KOLOR SKRYPTU
+## kolor skryptu 
 
 ```python
 RED='\033[0;31m'
@@ -116,7 +116,7 @@ echo -e "${RED}"
 Definiuje zmienne RED i NC, które zawierają kody kolorów w formacie ANSI. Następnie wyświetla kolor czerwony za pomocą zmiennej RED.
 Te 3 linie kodu nie są potrzebne, dodałem je tylko ze względów estetycznych, oraz by po wywołaniu skryptu wyróżniał się od reszty tekstu.
 
-## USUWANIE OSTATNIEJ LINIJKI TEKSTU W PLIKU
+## usuwanie ostatniej linijki w pliku tekstowym
 
 ```python
 remove_last_line() {
@@ -131,7 +131,7 @@ Definiuje funkcję remove_last_line, która usuwa ostatnią linię z określoneg
 Jeśli jest więcej niż jeden plik, a nie zdefiniujemy konkretnego pliku tekstowego, to usunie ostatnią linię z każdego pliku znajdującego się w tym folderze oraz wypisze pozostałe
 zawartości wszystkich plików.
 
-## WYSZUKIWANIE PLIKÓW I KATALOGÓW 
+## wyszukiwanie plików i katalogów
 
 ```python
 search_files() {
@@ -145,7 +145,7 @@ search_files() {
 ```
 Definiuje funkcję search_files, która wyszukuje pliki tekstowe zawierające określone słowo kluczowe w określonym folderze, a następnie wywołuje funkcję remove_last_line dla każdego znalezionego pliku.
 
-## MENU TEKSTOWE 
+## menu tekstowe 
 
 ```python
 while true; do
