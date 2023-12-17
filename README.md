@@ -211,13 +211,13 @@ done
 ```
 W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwanie plików tekstowych, zabijanie procesów, wyświetlanie autora skryptu lub zakończenie działania skryptu. W przypadku wyboru nieprawidłowej opcji, wyświetla komunikat o błędzie.
 
-1) Opcja pierwsza
+1) <em>Opcja pierwsza</em>
 
 1. Na początku wczytuje ścieżkę do folderu za pomocą polecenia "read -p "Podaj ścieżkę do folderu: " folder"
 2. następnie wczytuje słowo kluczowe za pomocą polecenia "read -p "Podaj słowo kluczowe: " keyword"
 3. Na końcu Następnie wywołuje funkcję "search_files" przekazując wczytaną ścieżkę do folderu i słowo kluczowe jako argumenty.
 
-2) Opcja druga
+2) <em>Opcja druga</em>
 
 1. pids=$(ps aux | awk '{print $2}' | shuf -n 5) Pobiera listę wszystkich procesów uruchomionych w systemie za pomocą polecenia ps aux.
 2. Następnie używa polecenia awk '{print $2}' do wyodrębnienia tylko drugiej kolumny, która zawiera identyfikatory procesów (PID).
@@ -226,19 +226,18 @@ W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwa
 5. echo "Zabito 5 losowych procesów, oto zabite procesy: " Wyświetla komunikat informujący o zabicu 5 losowych procesów.
 6.ps aux | shuf -n 5 Wyświetla losowo wybrane 5 linii z listy wszystkich procesów uruchomionych w systemie. Ten fragment kodu wykonuje zabijanie 5 losowo wybranych procesów i wyświetla informację o zabitych procesach oraz losowo wybrane 5 linii z listy wszystkich procesów.
 
-3) Opcja trzecia
+3) <em>Opcja trzecia</em>
 
 1. echo "autorem jest Gabriel Jędrzejczyk 2TiM" wypisuję nam na ekran imię i nazwisko autora za pomocą komendy echo
 
-4) Opcja czwarta
+4) <em>Opcja czwarta</em>
 
 1. echo "klasa autora: 2TIM" tak samo jak opcja 3, wypisuję na ekran za pomoca komendy echo klasę autora
 
-5) Opcja piąta
-
+5) <em>Opcja piąta</em>
 1. break: służy do przerwania działania pętli, czyli wyłącza nam skrypt
 
-6) Dodatkowa funkcja służąca do wyświetlania komunikatu o nieprawidłowym wyborze 
+6) <em>Dodatkowa funkcja służąca do wyświetlania komunikatu o nieprawidłowym wyborze </em> 
 
 1. echo "Nieprawidłowa opcja" jak wspominałem już wyżej na początku repozytorium, jeśli wypiszemy inną opcję niż 1 2 3 4 bądź 5. wyskakuje komunikat oznajmiający nas o błędzie pod nazwą "Nieprawidłowa opcja" i skrypt znów się uruchamia.
 
