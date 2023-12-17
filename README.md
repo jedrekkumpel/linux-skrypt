@@ -113,9 +113,9 @@ RED='\033[0;31m'
 NC='\033[0m'
 echo -e "${RED}"
 ```
-RED='\033[0;31m': Ta linia definiuje zmienną "RED" i przypisuje jej wartość koloru czerwonego w formacie specjalnym, który będzie wykorzystywany do zmiany koloru tekstu w terminalu.
-NC='\033[0m': Ta linia definiuje zmienną "NC" i przypisuje jej wartość resetowania koloru, aby przywrócić domyślny kolor tekstu w terminalu.
-echo -e "${RED}": Ta linia wyświetla pusty komunikat z użyciem opcji "-e" do interpretacji znaków specjalnych i wykorzystuje zmienną "RED" do zmiany koloru tekstu na czerwony w terminalu.
+1. RED='\033[0;31m': Ta linia definiuje zmienną "RED" i przypisuje jej wartość koloru czerwonego w formacie specjalnym, który będzie wykorzystywany do zmiany koloru tekstu w terminalu.
+2. NC='\033[0m': Ta linia definiuje zmienną "NC" i przypisuje jej wartość resetowania koloru, aby przywrócić domyślny kolor tekstu w terminalu.
+3. echo -e "${RED}": Ta linia wyświetla pusty komunikat z użyciem opcji "-e" do interpretacji znaków specjalnych i wykorzystuje zmienną "RED" do zmiany koloru tekstu na czerwony w terminalu.
 
 ## Usuwanie ostatniej linijki w pliku tekstowym
 
