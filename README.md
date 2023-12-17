@@ -127,9 +127,14 @@ remove_last_line() {
     cat  /home/student/Dokumenty/plik1.txt
 }
 ```
-Definiuje funkcję remove_last_line, która usuwa ostatnią linię z określonego pliku, wyświetla komunikat o usunięciu linii oraz wyświetla pozostałą zawartość pliku tekstowego. 
-Jeśli jest więcej niż jeden plik, a nie zdefiniujemy konkretnego pliku tekstowego, to usunie ostatnią linię z każdego pliku znajdującego się w tym folderze oraz wypisze pozostałe
-zawartości wszystkich plików.
+
+1. remove_last_line() {: Rozpoczyna definicję funkcji o nazwie "remove_last_line".
+2. file="$1": Przypisuje pierwszy argument przekazany do funkcji do zmiennej "file". W tym przypadku będzie to nazwa pliku, z którego chcemy usunąć ostatnią linię.
+3. sed -i '$ d' "$file": Używa polecenia "sed" do bezpośredniej edycji pliku, usuwając ostatnią linię. Opcja "-i" oznacza modyfikację pliku "w miejscu", a '$ d' oznacza usunięcie ostatniej linii.
+4. echo "Usunięto ostatnią linię z pliku $file"**: Wyświetla komunikat potwierdzający usunięcie ostatniej linii z określonego pliku.
+5. echo "oto reszta pliku, która pozostała w pliku tekstowym": Wyświetla komunikat informujący o pozostałej części pliku tekstowego.
+6. cat /home/student/Dokumenty/plik1.txt: Wyświetla zawartość pliku "plik1.txt" znajdującego się w katalogu "/home/student/Dokumenty".
+ 
 
 ## Wyszukiwanie plików i katalogów
 
@@ -143,7 +148,16 @@ search_files() {
     done
 }
 ```
-Definiuje funkcję search_files, która wyszukuje pliki tekstowe zawierające określone słowo kluczowe w określonym folderze, a następnie wywołuje funkcję remove_last_line dla każdego znalezionego pliku.
+
+1. search_files() {: Rozpoczyna definicję funkcji o nazwie "search_files".
+2. folder="$1": Przypisuje pierwszy argument przekazany do funkcji do zmiennej "folder". Ten argument będzie określał folder, w którym będą wyszukiwane pliki.
+3. keyword="$2": Przypisuje drugi argument przekazany do funkcji do zmiennej "keyword". Ten argument będzie określał słowo kluczowe, które będzie wyszukiwane w plikach.
+4. files=$(find "$folder" -type f -name "*.txt" -exec grep -l "$keyword" {} +) Wykorzystuje polecenie "find" do wyszukania plików z rozszerzeniem ".txt" w określonym folderze, a następnie używa polecenia "grep" do znalezienia plików zawierających określone słowo kluczowe. Znalezione pliki są 
+   przypisywane do zmiennej "files".
+5. for file in $files; do: Rozpoczyna pętlę "for", która będzie iterować przez znalezione pliki.
+6. remove_last_line "$file": Wywołuje funkcję "remove_last_line" dla każdego znalezionego pliku, aby usunąć jego ostatnią linię.
+7. done: Kończy blok kodu pętli "for".
+
 
 ## Proste menu tekstowe 
 
@@ -158,9 +172,9 @@ while true; do
     read -p "Wybierz opcję: " option
 ```
 Rozpoczyna nieskończoną pętlę, wyświetla menu proste menu tekstowe, prosi użytkownika o wybór opcji i oczekuje na wprowadzenie opcji przez użytkownika.
-na początku może być niezrozumiałe to, dlaczego echo jest dodane z opcją "-e". Jak wiemy opcja "-e" interpretuje znaki specjalne, więc menu tekstowe 
-które jest odpowiednio wycentrowane za pomocą tabulatora bądź spacji, będzie wyglądać lepiej i przejrzściej niż menu które by było wypisane od lewej strony.
-
+🐧 while true; do: Rozpoczyna pętlę "while", która będzie wykonywać się w nieskończoność, ponieważ warunek "true" zawsze będzie spełniony.
+🐧 echo -e: jak dobrze wiemy wypisuje nam na ekran, -e definiuje nam również znaki specjalne.
+🐧 read -p "Wybierz opcję: " option: Czeka na wprowadzenie opcji przez użytkownika i przypisuje ją do zmiennej "option".
 ## Opcje wyboru menu tekstowego
 
 ```python
