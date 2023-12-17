@@ -173,7 +173,7 @@ while true; do
 ```
 Rozpoczyna nieskończoną pętlę, wyświetla menu proste menu tekstowe, prosi użytkownika o wybór opcji i oczekuje na wprowadzenie opcji przez użytkownika.
 🐧 while true; do: Rozpoczyna pętlę "while", która będzie wykonywać się w nieskończoność, ponieważ warunek "true" zawsze będzie spełniony.
-🐧 echo -e: jak dobrze wiemy wypisuje nam na ekran, -e definiuje nam również znaki specjalne.
+🐧 echo -e: jak dobrze wiemy wypisuje nam na tekst ekran, -e definiuje nam również znaki specjalne.
 🐧 read -p "Wybierz opcję: " option: Czeka na wprowadzenie opcji przez użytkownika i przypisuje ją do zmiennej "option".
 ## Opcje wyboru menu tekstowego
 
@@ -211,39 +211,39 @@ done
 W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwanie plików tekstowych, zabijanie procesów, wyświetlanie autora skryptu lub zakończenie działania skryptu. W przypadku wyboru nieprawidłowej opcji, wyświetla komunikat o błędzie.
 
 1) Opcja pierwsza
-   
-🐧 Na początku wczytuje ścieżkę do folderu za pomocą polecenia "read -p "Podaj ścieżkę do folderu: " folder"
-🐧 następnie wczytuje słowo kluczowe za pomocą polecenia "read -p "Podaj słowo kluczowe: " keyword"
-🐧 Na końcu Następnie wywołuje funkcję "search_files" przekazując wczytaną ścieżkę do folderu i słowo kluczowe jako argumenty.
+
+ Na początku wczytuje ścieżkę do folderu za pomocą polecenia "read -p "Podaj ścieżkę do folderu: " folder"
+ następnie wczytuje słowo kluczowe za pomocą polecenia "read -p "Podaj słowo kluczowe: " keyword"
+ Na końcu Następnie wywołuje funkcję "search_files" przekazując wczytaną ścieżkę do folderu i słowo kluczowe jako argumenty.
 
 2) Opcja druga
 
-🐧pids=$(ps aux | awk '{print $2}' | shuf -n 5) Pobiera listę wszystkich procesów uruchomionych w systemie za pomocą polecenia ps aux. Następnie używa polecenia awk '{print $2}' do wyodrębnienia tylko drugiej kolumny, która zawiera identyfikatory procesów (PID). Na końcu, za pomocą polecenia shuf -n 
+pids=$(ps aux | awk '{print $2}' | shuf -n 5) Pobiera listę wszystkich procesów uruchomionych w systemie za pomocą polecenia ps aux. Następnie używa polecenia awk '{print $2}' do wyodrębnienia tylko drugiej kolumny, która zawiera identyfikatory procesów (PID). Na końcu, za pomocą polecenia shuf -n 
  5, losowo wybiera 5 identyfikatorów procesów spośród wszystkich znalezionych.
 
-🐧 for pid in $pids; do kill "$pid" Uruchamia pętlę for, która iteruje przez każdy identyfikator procesu (PID) z listy pids. Wewnątrz pętli używa polecenia kill "$pid" do zabicie każdego procesu o wybranym identyfikatorze.
+for pid in $pids; do kill "$pid" Uruchamia pętlę for, która iteruje przez każdy identyfikator procesu (PID) z listy pids. Wewnątrz pętli używa polecenia kill "$pid" do zabicie każdego procesu o wybranym identyfikatorze.
 
-🐧 echo "Zabito 5 losowych procesów, oto zabite procesy: " Wyświetla komunikat informujący o zabicu 5 losowych procesów.
+echo "Zabito 5 losowych procesów, oto zabite procesy: " Wyświetla komunikat informujący o zabicu 5 losowych procesów.
 
-🐧 ps aux | shuf -n 5 Wyświetla losowo wybrane 5 linii z listy wszystkich procesów uruchomionych w systemie. Ten fragment kodu wykonuje zabijanie 5 losowo wybranych procesów i wyświetla informację o zabitych procesach oraz losowo wybrane 5 linii z listy wszystkich procesów.
+ps aux | shuf -n 5 Wyświetla losowo wybrane 5 linii z listy wszystkich procesów uruchomionych w systemie. Ten fragment kodu wykonuje zabijanie 5 losowo wybranych procesów i wyświetla informację o zabitych procesach oraz losowo wybrane 5 linii z listy wszystkich procesów.
 
 3) Opcja trzecia
 
-🐧 echo "autorem jest Gabriel Jędrzejczyk 2TiM" wypisuję nam na ekran imię i nazwisko autora za pomocą komendy echo
+echo "autorem jest Gabriel Jędrzejczyk 2TiM" wypisuję nam na ekran imię i nazwisko autora za pomocą komendy echo
 
 4) Opcja czwarta
 
-🐧 echo "klasa autora: 2TIM" tak samo jak opcja 3, wypisuję na ekran za pomoca komendy echo klasę autora
+echo "klasa autora: 2TIM" tak samo jak opcja 3, wypisuję na ekran za pomoca komendy echo klasę autora
 
 5) Opcja piąta
 
-break służy do przerwania działania pętli, czyli wyłącza nam skrypt
+break: służy do przerwania działania pętli, czyli wyłącza nam skrypt
 
-*) 
+6) Dodatkowa funkcja służąca do wyświetlania komunikatu o nieprawidłowym wyborze 
 
- echo "Nieprawidłowa opcja" jak wspominałem już wyżej na początku repozytorium, jeśli wypiszemy inną opcję niż 1,2,3,4,5, wyskakuje błąd pod nazwą "Nieprawidłowa opcja" i skrypt znów się uruchamia.
+echo "Nieprawidłowa opcja" jak wspominałem już wyżej na początku repozytorium, jeśli wypiszemy inną opcję niż 1 2 3 4 bądź 5. wyskakuje komunikat oznajmiający nas o błędzie pod nazwą "Nieprawidłowa opcja" i skrypt znów się uruchamia.
 
-## 🐧Działanie skryptu:🐧
+## 🐧Działanie skryptu🐧
  
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186005358645358662/image.png?ex=6591ac90&is=657f3790&hm=330a03b62811787ef9fc722df22beb2e118bc122fef6ef60d20c8f7aaac9c2a3&)
  
