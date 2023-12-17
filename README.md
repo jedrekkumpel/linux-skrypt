@@ -179,3 +179,27 @@ Oraz przykład bez podania słowa kluczowego:
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186022983509213304/image.png?ex=6591bcfa&is=657f47fa&hm=f3dddc83da16f40ad356f775822d938d0e09345b4c5ff6ec10e8d266db7a2b1a&)
 
 Jak można zauważyć, skrypt usunął ostatnie linijki z wszystkich plików tekstowych znajdujących się w folderze dokumenty, w tym przypadku z plików: plik1.txt oraz plik2.txt
+
+<em>🐧OPCJA DRUGA🐧</em>
+
+Podczas gdy wybierzemy opcję numer 2, skrypt zabije losowo 5 procesów oraz je wypisze. 
+
+![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186024237899730998/image.png?ex=6591be25&is=657f4925&hm=5ea55ab323b3b55f1789b5e349aa2d9da34c05c74f99bdfdf9217204f49409a2&)
+
+<em>🐧OPCJA TRZECIA🐧</em>
+
+Opcja trzecia wypisuję imię oraz nazwisko twórcy skryptu.
+
+![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186025355329425468/image.png?ex=6591bf2f&is=657f4a2f&hm=11ce73286eb8c1e316fe5bea52161cdd00dc25512201ab9183c18c5f697ef1f4&) 
+
+<em>🐧OPCJA CZWARTA🐧</em>
+
+Opcja czwarta wypisuję klasę twórcy skryptu. 
+
+![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186025931349966848/image.png?ex=6591bfb9&is=657f4ab9&hm=ff5db2ff26972c07673ab28f0ef591f6c9e655742ddf675244e319f90063a475&)
+
+<em>🐧OPCJA PIĄTA🐧</em>
+
+Ostatnia opcja, najzywczajniej wychodzi ze skryptu, czyli kończy pętlę utworzoną przez komende "while true; do" 
+
+![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186026580087144569/image.png?ex=6591c054&is=657f4b54&hm=c2f2543e8bb52d50f9364d2d69fe761c585b63843628d0d9bcd28780e8a7f0d7&)
