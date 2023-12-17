@@ -152,5 +152,9 @@ done
 ```
 W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwanie plików tekstowych, zabijanie procesów, wyświetlanie autora skryptu lub zakończenie działania skryptu. W przypadku wyboru nieprawidłowej opcji, wyświetla komunikat o błędzie.
 
+WYGLAD SKRYPTU: 
+
+![alt text](https://media.discordapp.net/attachments/1026955720253505607/1182400669714481172/image.png?ex=658dc9ef&is=657b54ef&hm=3a1bb3f712119f12ee8bc0a6a4579f7a45a53e720cb90688e5d6e8969cf26a8b&=&format=webp&quality=lossless&width=261&height=124)
+
 
 
