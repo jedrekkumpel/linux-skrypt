@@ -195,7 +195,39 @@ które jest odpowiednio wycentrowane za pomocą tabulatora bądź spacji, będzi
 done
 ```
 W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwanie plików tekstowych, zabijanie procesów, wyświetlanie autora skryptu lub zakończenie działania skryptu. W przypadku wyboru nieprawidłowej opcji, wyświetla komunikat o błędzie.
- 
+
+1) Opcja pierwsza
+🐧 Na początku wczytuje ścieżkę do folderu za pomocą polecenia "read -p "Podaj ścieżkę do folderu: " folder"
+🐧 następnie wczytuje słowo kluczowe za pomocą polecenia "read -p "Podaj słowo kluczowe: " keyword"
+🐧 Na końcu Następnie wywołuje funkcję "search_files" przekazując wczytaną ścieżkę do folderu i słowo kluczowe jako argumenty.
+
+2) Opcja druga
+
+🐧pids=$(ps aux | awk '{print $2}' | shuf -n 5) Pobiera listę wszystkich procesów uruchomionych w systemie za pomocą polecenia ps aux. Następnie używa polecenia awk '{print $2}' do wyodrębnienia tylko drugiej kolumny, która zawiera identyfikatory procesów (PID). Na końcu, za pomocą polecenia shuf -n 
+ 5, losowo wybiera 5 identyfikatorów procesów spośród wszystkich znalezionych.
+
+🐧 for pid in $pids; do kill "$pid" Uruchamia pętlę for, która iteruje przez każdy identyfikator procesu (PID) z listy pids. Wewnątrz pętli używa polecenia kill "$pid" do zabicie każdego procesu o wybranym identyfikatorze.
+
+🐧 echo "Zabito 5 losowych procesów, oto zabite procesy: " Wyświetla komunikat informujący o zabicu 5 losowych procesów.
+
+🐧 ps aux | shuf -n 5 Wyświetla losowo wybrane 5 linii z listy wszystkich procesów uruchomionych w systemie. Ten fragment kodu wykonuje zabijanie 5 losowo wybranych procesów i wyświetla informację o zabitych procesach oraz losowo wybrane 5 linii z listy wszystkich procesów.
+
+3)
+
+🐧 echo "autorem jest Gabriel Jędrzejczyk 2TiM" wypisuję nam na ekran imię i nazwisko autora za pomocą komendy echo
+
+4) 
+
+🐧 echo "klasa autora: 2TIM" tak samo jak opcja 3, wypisuję na ekran za pomoca komendy echo klasę autora
+
+5)
+
+break służy do przerwania działania pętli, czyli wyłącza nam skrypt
+
+*)
+
+ echo "Nieprawidłowa opcja" jak wspominałem już wyżej na początku repozytorium, jeśli wypiszemy inną opcję niż 1,2,3,4,5, wyskakuje błąd pod nazwą "Nieprawidłowa opcja" i skrypt znów się uruchamia.
+
 ## 🐧Działanie skryptu:🐧
  
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186005358645358662/image.png?ex=6591ac90&is=657f3790&hm=330a03b62811787ef9fc722df22beb2e118bc122fef6ef60d20c8f7aaac9c2a3&)
