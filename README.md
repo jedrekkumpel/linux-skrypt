@@ -202,7 +202,7 @@ W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwa
 🐧 następnie wczytuje słowo kluczowe za pomocą polecenia "read -p "Podaj słowo kluczowe: " keyword"
 🐧 Na końcu Następnie wywołuje funkcję "search_files" przekazując wczytaną ścieżkę do folderu i słowo kluczowe jako argumenty.
 
-3) Opcja druga
+2) Opcja druga
 
 🐧pids=$(ps aux | awk '{print $2}' | shuf -n 5) Pobiera listę wszystkich procesów uruchomionych w systemie za pomocą polecenia ps aux. Następnie używa polecenia awk '{print $2}' do wyodrębnienia tylko drugiej kolumny, która zawiera identyfikatory procesów (PID). Na końcu, za pomocą polecenia shuf -n 
  5, losowo wybiera 5 identyfikatorów procesów spośród wszystkich znalezionych.
@@ -213,19 +213,19 @@ W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwa
 
 🐧 ps aux | shuf -n 5 Wyświetla losowo wybrane 5 linii z listy wszystkich procesów uruchomionych w systemie. Ten fragment kodu wykonuje zabijanie 5 losowo wybranych procesów i wyświetla informację o zabitych procesach oraz losowo wybrane 5 linii z listy wszystkich procesów.
 
-3)
+3) Opcja trzecia
 
 🐧 echo "autorem jest Gabriel Jędrzejczyk 2TiM" wypisuję nam na ekran imię i nazwisko autora za pomocą komendy echo
 
-4) 
+4) Opcja czwarta
 
 🐧 echo "klasa autora: 2TIM" tak samo jak opcja 3, wypisuję na ekran za pomoca komendy echo klasę autora
 
-5)
+5) Opcja piąta
 
 break służy do przerwania działania pętli, czyli wyłącza nam skrypt
 
-*)
+*) 
 
  echo "Nieprawidłowa opcja" jak wspominałem już wyżej na początku repozytorium, jeśli wypiszemy inną opcję niż 1,2,3,4,5, wyskakuje błąd pod nazwą "Nieprawidłowa opcja" i skrypt znów się uruchamia.
 
