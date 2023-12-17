@@ -197,11 +197,12 @@ done
 W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwanie plików tekstowych, zabijanie procesów, wyświetlanie autora skryptu lub zakończenie działania skryptu. W przypadku wyboru nieprawidłowej opcji, wyświetla komunikat o błędzie.
 
 1) Opcja pierwsza
+   
 🐧 Na początku wczytuje ścieżkę do folderu za pomocą polecenia "read -p "Podaj ścieżkę do folderu: " folder"
 🐧 następnie wczytuje słowo kluczowe za pomocą polecenia "read -p "Podaj słowo kluczowe: " keyword"
 🐧 Na końcu Następnie wywołuje funkcję "search_files" przekazując wczytaną ścieżkę do folderu i słowo kluczowe jako argumenty.
 
-2) Opcja druga
+3) Opcja druga
 
 🐧pids=$(ps aux | awk '{print $2}' | shuf -n 5) Pobiera listę wszystkich procesów uruchomionych w systemie za pomocą polecenia ps aux. Następnie używa polecenia awk '{print $2}' do wyodrębnienia tylko drugiej kolumny, która zawiera identyfikatory procesów (PID). Na końcu, za pomocą polecenia shuf -n 
  5, losowo wybiera 5 identyfikatorów procesów spośród wszystkich znalezionych.
