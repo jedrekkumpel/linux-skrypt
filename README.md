@@ -169,3 +169,13 @@ Po wypisaniu nieprawidłowej liczby, czyli większej niż 5 bądź mniejszej ni�
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186015662640992287/image.png?ex=6591b629&is=657f4129&hm=66bf562f8a406adb6ba9cf8b8326a86727e6d7e7441f6afb6593c08fe8c738ec&)
 
 <em>🐧OPCJA PIERWSZA🐧</em>
+
+Po wybraniu opcji numer 1, wyświetla się komunikat proszący nas o podanie ścieżki do folderu, z którego skrypt ma znaleźć pliki tekstowe i usunąć z nich ostatnią linijkę. Po podaniu ścieżki ukazuje się nam komunikat by podać słowo kluczowe, nie trzeba go podawać, jednak gdy w folderze jest więcej niż jeden plik, a chcemy by skrypt usunął ostatnią linię z konkretnego pliku tekstowego w którym znajduję sie to konkretne słowo to trzeba je wpisać. Przykład z zastosowaniem słowa kluczowego: 
+
+![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186020121882411170/image.png?ex=6591ba50&is=657f4550&hm=3f8d28226cda17366eb9288d76a90bef7d57fd09560017bbf0c8e1ba72472807&)
+
+Oraz przykład bez podania słowa kluczowego: 
+
+![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186022983509213304/image.png?ex=6591bcfa&is=657f47fa&hm=f3dddc83da16f40ad356f775822d938d0e09345b4c5ff6ec10e8d266db7a2b1a&)
+
+Jak można zauważyć, skrypt usunął ostatnie linijki wszystkich plików tekstowych znajdujących się  w folderze dokumenty, w tym przypadku z plików: plik1.txt oraz plik2.txt
