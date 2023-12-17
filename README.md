@@ -233,6 +233,6 @@ Ostatnia opcja, najzywczajniej wychodzi ze skryptu, czyli kończy pętlę utworz
  
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186026580087144569/image.png?ex=6591c054&is=657f4b54&hm=c2f2543e8bb52d50f9364d2d69fe761c585b63843628d0d9bcd28780e8a7f0d7&)
  
-## 🐧AUTOR 🐧
+## 🐧AUTOR🐧
  
 * **Gabriel Jędrzejczyk** - **2TIM**  - [jedrekkumpel](https://github.com/jedrekkumpel/)
