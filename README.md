@@ -154,7 +154,7 @@ W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwa
 
 WYGLAD SKRYPTU: 
 
-![alt text](https://media.discordapp.net/attachments/1026955720253505607/1182400669714481172/image.png?ex=658dc9ef&is=657b54ef&hm=3a1bb3f712119f12ee8bc0a6a4579f7a45a53e720cb90688e5d6e8969cf26a8b&=&format=webp&quality=lossless&width=261&height=124)
+![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186005358645358662/image.png?ex=6591ac90&is=657f3790&hm=330a03b62811787ef9fc722df22beb2e118bc122fef6ef60d20c8f7aaac9c2a3&)
 
 
 
