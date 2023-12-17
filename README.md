@@ -152,7 +152,7 @@ done
 ```
 W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwanie plików tekstowych, zabijanie procesów, wyświetlanie autora skryptu lub zakończenie działania skryptu. W przypadku wyboru nieprawidłowej opcji, wyświetla komunikat o błędzie.
 
-<em>🐧WYGLĄD SKRYPTU🐧</em>
+<em>🐧DZIAŁANIE SKRYPTU🐧</em>
 
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186005358645358662/image.png?ex=6591ac90&is=657f3790&hm=330a03b62811787ef9fc722df22beb2e118bc122fef6ef60d20c8f7aaac9c2a3&)
 
@@ -168,3 +168,4 @@ Po wypisaniu nieprawidłowej liczby, czyli większej niż 5 bądź mniejszej ni�
 
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186015662640992287/image.png?ex=6591b629&is=657f4129&hm=66bf562f8a406adb6ba9cf8b8326a86727e6d7e7441f6afb6593c08fe8c738ec&)
 
+<em>🐧OPCJA PIERWSZA🐧</em>
