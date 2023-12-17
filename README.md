@@ -4,10 +4,10 @@
     <img src="https://media.discordapp.net/attachments/1026955720253505607/1186014700966781020/image.jpg?ex=6591b543&is=657f4043&hm=a398c2629d47343cff77b1c79428eec1ef20eaaf31376a96ae038307df4f9a64&=&format=webp&width=234&height=273" alt="Logo" width="80" height="80">
   </a>
  
-  <h3 align="center">Linux Menu</h3>
+  <h3 align="center">Linux Skrpyt posiadający proste menu tekstowe</h3>
  
   <p align="center">
-    Multitool wykonany w celu rozwijania swoich umiejętności w języku bash.
+    Multitool 
     <br/>
     <br/>
   </p>
