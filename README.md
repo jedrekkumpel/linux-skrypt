@@ -30,7 +30,7 @@ Jest to prosty projekt napsiany w języku bash, ma za zadanie:
 </ol>
  
  
-## 🐧Kod Skryptu:
+## 🐧Kod Skryptu:🐧
  
 ```python
 #!/bin/bash
@@ -181,7 +181,7 @@ done
 ```
 W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwanie plików tekstowych, zabijanie procesów, wyświetlanie autora skryptu lub zakończenie działania skryptu. W przypadku wyboru nieprawidłowej opcji, wyświetla komunikat o błędzie.
  
-## 🐧Działanie skryptu:
+## 🐧Działanie skryptu:🐧
  
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186005358645358662/image.png?ex=6591ac90&is=657f3790&hm=330a03b62811787ef9fc722df22beb2e118bc122fef6ef60d20c8f7aaac9c2a3&)
  
@@ -233,6 +233,6 @@ Ostatnia opcja, najzywczajniej wychodzi ze skryptu, czyli kończy pętlę utworz
  
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186026580087144569/image.png?ex=6591c054&is=657f4b54&hm=c2f2543e8bb52d50f9364d2d69fe761c585b63843628d0d9bcd28780e8a7f0d7&)
  
-## 🐧Autorzy
+## 🐧AUTOR 🐧
  
 * **Gabriel Jędrzejczyk** - **2TIM**  - [jedrekkumpel](https://github.com/jedrekkumpel/)
