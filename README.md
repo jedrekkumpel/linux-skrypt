@@ -113,8 +113,9 @@ RED='\033[0;31m'
 NC='\033[0m'
 echo -e "${RED}"
 ```
-Definiuje zmienne RED i NC, które zawierają kody kolorów w formacie ANSI. Następnie wyświetla kolor czerwony za pomocą zmiennej RED.
-Te 3 linie kodu nie są potrzebne, dodałem je tylko ze względów estetycznych, oraz by po wywołaniu skryptu wyróżniał się od reszty tekstu.
+RED='\033[0;31m': Ta linia definiuje zmienną "RED" i przypisuje jej wartość koloru czerwonego w formacie specjalnym, który będzie wykorzystywany do zmiany koloru tekstu w terminalu.
+NC='\033[0m': Ta linia definiuje zmienną "NC" i przypisuje jej wartość resetowania koloru, aby przywrócić domyślny kolor tekstu w terminalu.
+echo -e "${RED}": Ta linia wyświetla pusty komunikat z użyciem opcji "-e" do interpretacji znaków specjalnych i wykorzystuje zmienną "RED" do zmiany koloru tekstu na czerwony w terminalu.
 
 ## Usuwanie ostatniej linijki w pliku tekstowym
 
@@ -171,10 +172,10 @@ while true; do
     echo -e             "5. Wyjdź."
     read -p "Wybierz opcję: " option
 ```
-Rozpoczyna nieskończoną pętlę, wyświetla menu proste menu tekstowe, prosi użytkownika o wybór opcji i oczekuje na wprowadzenie opcji przez użytkownika.
-🐧 while true; do: Rozpoczyna pętlę "while", która będzie wykonywać się w nieskończoność, ponieważ warunek "true" zawsze będzie spełniony.
-🐧 echo -e: jak dobrze wiemy wypisuje nam na tekst ekran, -e definiuje nam również znaki specjalne.
-🐧 read -p "Wybierz opcję: " option: Czeka na wprowadzenie opcji przez użytkownika i przypisuje ją do zmiennej "option".
+1. while true; do: Rozpoczyna pętlę "while", która będzie wykonywać się w nieskończoność, ponieważ warunek "true" zawsze będzie spełniony.
+2. echo -e: jak dobrze wiemy wypisuje nam na tekst ekran, -e definiuje nam również znaki specjalne.
+3. read -p "Wybierz opcję: " option: Czeka na wprowadzenie opcji przez użytkownika i przypisuje ją do zmiennej "option".
+   
 ## Opcje wyboru menu tekstowego
 
 ```python
@@ -212,36 +213,34 @@ W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwa
 
 1) Opcja pierwsza
 
- Na początku wczytuje ścieżkę do folderu za pomocą polecenia "read -p "Podaj ścieżkę do folderu: " folder"
- następnie wczytuje słowo kluczowe za pomocą polecenia "read -p "Podaj słowo kluczowe: " keyword"
- Na końcu Następnie wywołuje funkcję "search_files" przekazując wczytaną ścieżkę do folderu i słowo kluczowe jako argumenty.
+1. Na początku wczytuje ścieżkę do folderu za pomocą polecenia "read -p "Podaj ścieżkę do folderu: " folder"
+2. następnie wczytuje słowo kluczowe za pomocą polecenia "read -p "Podaj słowo kluczowe: " keyword"
+3. Na końcu Następnie wywołuje funkcję "search_files" przekazując wczytaną ścieżkę do folderu i słowo kluczowe jako argumenty.
 
 2) Opcja druga
 
-pids=$(ps aux | awk '{print $2}' | shuf -n 5) Pobiera listę wszystkich procesów uruchomionych w systemie za pomocą polecenia ps aux. Następnie używa polecenia awk '{print $2}' do wyodrębnienia tylko drugiej kolumny, która zawiera identyfikatory procesów (PID). Na końcu, za pomocą polecenia shuf -n 
- 5, losowo wybiera 5 identyfikatorów procesów spośród wszystkich znalezionych.
-
-for pid in $pids; do kill "$pid" Uruchamia pętlę for, która iteruje przez każdy identyfikator procesu (PID) z listy pids. Wewnątrz pętli używa polecenia kill "$pid" do zabicie każdego procesu o wybranym identyfikatorze.
-
-echo "Zabito 5 losowych procesów, oto zabite procesy: " Wyświetla komunikat informujący o zabicu 5 losowych procesów.
-
-ps aux | shuf -n 5 Wyświetla losowo wybrane 5 linii z listy wszystkich procesów uruchomionych w systemie. Ten fragment kodu wykonuje zabijanie 5 losowo wybranych procesów i wyświetla informację o zabitych procesach oraz losowo wybrane 5 linii z listy wszystkich procesów.
+1. pids=$(ps aux | awk '{print $2}' | shuf -n 5) Pobiera listę wszystkich procesów uruchomionych w systemie za pomocą polecenia ps aux.
+2. Następnie używa polecenia awk '{print $2}' do wyodrębnienia tylko drugiej kolumny, która zawiera identyfikatory procesów (PID).
+3. Na końcu, za pomocą polecenia shuf -n 5, losowo wybiera 5 identyfikatorów procesów spośród wszystkich znalezionych.
+4. for pid in $pids; do kill "$pid" Uruchamia pętlę for, która iteruje przez każdy identyfikator procesu (PID) z listy pids. Wewnątrz pętli używa polecenia kill "$pid" do zabicie każdego procesu o wybranym identyfikatorze.
+5. echo "Zabito 5 losowych procesów, oto zabite procesy: " Wyświetla komunikat informujący o zabicu 5 losowych procesów.
+6.ps aux | shuf -n 5 Wyświetla losowo wybrane 5 linii z listy wszystkich procesów uruchomionych w systemie. Ten fragment kodu wykonuje zabijanie 5 losowo wybranych procesów i wyświetla informację o zabitych procesach oraz losowo wybrane 5 linii z listy wszystkich procesów.
 
 3) Opcja trzecia
 
-echo "autorem jest Gabriel Jędrzejczyk 2TiM" wypisuję nam na ekran imię i nazwisko autora za pomocą komendy echo
+1. echo "autorem jest Gabriel Jędrzejczyk 2TiM" wypisuję nam na ekran imię i nazwisko autora za pomocą komendy echo
 
 4) Opcja czwarta
 
-echo "klasa autora: 2TIM" tak samo jak opcja 3, wypisuję na ekran za pomoca komendy echo klasę autora
+1. echo "klasa autora: 2TIM" tak samo jak opcja 3, wypisuję na ekran za pomoca komendy echo klasę autora
 
 5) Opcja piąta
 
-break: służy do przerwania działania pętli, czyli wyłącza nam skrypt
+1. break: służy do przerwania działania pętli, czyli wyłącza nam skrypt
 
 6) Dodatkowa funkcja służąca do wyświetlania komunikatu o nieprawidłowym wyborze 
 
-echo "Nieprawidłowa opcja" jak wspominałem już wyżej na początku repozytorium, jeśli wypiszemy inną opcję niż 1 2 3 4 bądź 5. wyskakuje komunikat oznajmiający nas o błędzie pod nazwą "Nieprawidłowa opcja" i skrypt znów się uruchamia.
+1. echo "Nieprawidłowa opcja" jak wspominałem już wyżej na początku repozytorium, jeśli wypiszemy inną opcję niż 1 2 3 4 bądź 5. wyskakuje komunikat oznajmiający nas o błędzie pod nazwą "Nieprawidłowa opcja" i skrypt znów się uruchamia.
 
 ## 🐧Działanie skryptu🐧
  
