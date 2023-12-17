@@ -99,7 +99,7 @@ done
  
 ```
  
-## 🐧Poniżej postaram się wyjaśnić jak działają mniej zrozumiałe linie kodu🐧
+## 🐧Poniżej postaram się wyjaśnić jak działają poszczególne linie kodu🐧
  
 ```python
 #!/bin/bash
