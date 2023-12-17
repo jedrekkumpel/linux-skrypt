@@ -178,4 +178,4 @@ Oraz przykład bez podania słowa kluczowego:
 
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186022983509213304/image.png?ex=6591bcfa&is=657f47fa&hm=f3dddc83da16f40ad356f775822d938d0e09345b4c5ff6ec10e8d266db7a2b1a&)
 
-Jak można zauważyć, skrypt usunął ostatnie linijki wszystkich plików tekstowych znajdujących się  w folderze dokumenty, w tym przypadku z plików: plik1.txt oraz plik2.txt
+Jak można zauważyć, skrypt usunął ostatnie linijki z wszystkich plików tekstowych znajdujących się w folderze dokumenty, w tym przypadku z plików: plik1.txt oraz plik2.txt
