@@ -212,7 +212,7 @@ Po wypisaniu nieprawidłowej liczby, czyli większej niż 5 bądź mniejszej ni�
  
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186015662640992287/image.png?ex=6591b629&is=657f4129&hm=66bf562f8a406adb6ba9cf8b8326a86727e6d7e7441f6afb6593c08fe8c738ec&)
  
-<em>🐧OPCJA PIERWSZA🐧</em>
+## <em>🐧OPCJA PIERWSZA🐧</em>
  
 Po wybraniu opcji numer 1, wyświetla się komunikat proszący nas o podanie ścieżki do folderu, z którego skrypt ma znaleźć pliki tekstowe i usunąć z nich ostatnią linijkę. Po podaniu ścieżki ukazuje się nam komunikat by podać słowo kluczowe, nie trzeba go podawać, jednak gdy w folderze jest więcej niż jeden plik, a chcemy by skrypt usunął ostatnią linię z konkretnego pliku tekstowego w którym znajduję sie to konkretne słowo to trzeba je wpisać. Przykład z zastosowaniem słowa kluczowego: 
  
@@ -224,25 +224,25 @@ Oraz przykład bez podania słowa kluczowego:
  
 Jak można zauważyć, skrypt usunął ostatnie linijki z wszystkich plików tekstowych znajdujących się w folderze dokumenty, w tym przypadku z plików: plik1.txt oraz plik2.txt
  
-<em>🐧OPCJA DRUGA🐧</em>
+## <em>🐧OPCJA DRUGA🐧</em>
  
 Podczas gdy wybierzemy opcję numer 2, skrypt zabije losowo 5 procesów oraz je wypisze. 
  
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186024237899730998/image.png?ex=6591be25&is=657f4925&hm=5ea55ab323b3b55f1789b5e349aa2d9da34c05c74f99bdfdf9217204f49409a2&)
  
-<em>🐧OPCJA TRZECIA🐧</em>
+## <em>🐧OPCJA TRZECIA🐧</em>
  
 Opcja trzecia wypisuję imię oraz nazwisko twórcy skryptu.
  
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186025355329425468/image.png?ex=6591bf2f&is=657f4a2f&hm=11ce73286eb8c1e316fe5bea52161cdd00dc25512201ab9183c18c5f697ef1f4&) 
  
-<em>🐧OPCJA CZWARTA🐧</em>
+## <em>🐧OPCJA CZWARTA🐧</em>
  
 Opcja czwarta wypisuję klasę twórcy skryptu. 
  
 ![alt text](https://cdn.discordapp.com/attachments/1026955720253505607/1186025931349966848/image.png?ex=6591bfb9&is=657f4ab9&hm=ff5db2ff26972c07673ab28f0ef591f6c9e655742ddf675244e319f90063a475&)
  
-<em>🐧OPCJA PIĄTA🐧</em>
+## <em>🐧OPCJA PIĄTA🐧</em>
  
 Ostatnia opcja, najzywczajniej wychodzi ze skryptu, czyli kończy pętlę utworzoną przez komende "while true; do" 
  
