@@ -15,7 +15,7 @@
  
 ![Downloads](https://img.shields.io/github/downloads/jedrekkumpel/linux-skrypt/total) ![Contributors](https://img.shields.io/github/contributors/jedrekkumpel/linux-skrypt?color=dark-green) ![Issues](https://img.shields.io/github/issues/jedrekkumpel/linux-skrypt)
  
-## 🐧O projekcie 🐧
+## 🐧O skrypcie 🐧
  
 ![Screen Shot](https://media.discordapp.net/attachments/1026955720253505607/1186005358645358662/image.png?ex=6591ac90&is=657f3790&hm=330a03b62811787ef9fc722df22beb2e118bc122fef6ef60d20c8f7aaac9c2a3&=&format=webp&quality=lossless&width=527&height=123)
  
