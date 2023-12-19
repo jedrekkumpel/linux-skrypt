@@ -7,7 +7,7 @@
   <h3 align="center">Skrypt Linux posiadający proste menu tekstowe</h3>
  
   <p align="center">
-    Multitool by Gabriel Jędrzejczyk aka jedrekkumpel 😎
+    Multitool by Gabriel Jędrzejczyk  
     <br/>
     <br/>
   </p>
@@ -224,6 +224,7 @@ W zależności od wybranej opcji, wykonuje określone akcje, takie jak wyszukiwa
 3. Na końcu, za pomocą polecenia shuf -n 5, losowo wybiera 5 identyfikatorów procesów spośród wszystkich znalezionych.
 4. for pid in $pids; do kill "$pid" Uruchamia pętlę for, która iteruje przez każdy identyfikator procesu (PID) z listy pids. Wewnątrz pętli używa polecenia kill "$pid" do zabicie każdego procesu o wybranym identyfikatorze.
 5. echo "Zabito 5 losowych procesów, oto zabite procesy: " Wyświetla komunikat informujący o zabicu 5 losowych procesów.
+
 6.ps aux | shuf -n 5 Wyświetla losowo wybrane 5 linii z listy wszystkich procesów uruchomionych w systemie. Ten fragment kodu wykonuje zabijanie 5 losowo wybranych procesów i wyświetla informację o zabitych procesach oraz losowo wybrane 5 linii z listy wszystkich procesów.
 
 3) <em>Opcja trzecia</em>
