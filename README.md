@@ -155,7 +155,7 @@ search_files() {
 3. keyword="$2": Przypisuje drugi argument przekazany do funkcji do zmiennej "keyword". Ten argument będzie określał słowo kluczowe, które będzie wyszukiwane w plikach.
 4. files=$(find "$folder" -type f -name "*.txt" -exec grep -l "$keyword" {} +) Wykorzystuje polecenie "find" do wyszukania plików z rozszerzeniem ".txt" w określonym folderze, a następnie używa polecenia "grep" do znalezienia plików zawierających określone słowo kluczowe. Znalezione pliki są 
    przypisywane do zmiennej "files".
-5. for file in $files; do: Rozpoczyna pętlę "for", która będzie iterować przez znalezione pliki.
+5. for file in $files; do: Rozpoczyna pętlę "for", która będzie ingerować w znalezione pliki.
 6. remove_last_line "$file": Wywołuje funkcję "remove_last_line" dla każdego znalezionego pliku, aby usunąć jego ostatnią linię.
 7. done: Kończy blok kodu pętli "for".
 
