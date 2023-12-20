@@ -132,7 +132,7 @@ remove_last_line() {
 1. remove_last_line() {: Rozpoczyna definicję funkcji o nazwie "remove_last_line".
 2. file="$1": Przypisuje pierwszy argument przekazany do funkcji do zmiennej "file". W tym przypadku będzie to nazwa pliku, z którego chcemy usunąć ostatnią linię.
 3. sed -i '$ d' "$file": Używa polecenia "sed" do bezpośredniej edycji pliku, usuwając ostatnią linię. Opcja "-i" oznacza modyfikację pliku "w miejscu", a '$ d' oznacza usunięcie ostatniej linii.
-4. echo "Usunięto ostatnią linię z pliku $file"**: Wyświetla komunikat potwierdzający usunięcie ostatniej linii z określonego pliku.
+4. echo "Usunięto ostatnią linię z pliku $file": Wyświetla komunikat potwierdzający usunięcie ostatniej linii z określonego pliku.
 5. echo "oto reszta pliku, która pozostała w pliku tekstowym": Wyświetla komunikat informujący o pozostałej części pliku tekstowego.
 6. cat /home/student/Dokumenty/plik1.txt: Wyświetla zawartość pliku "plik1.txt" znajdującego się w katalogu "/home/student/Dokumenty".
  
